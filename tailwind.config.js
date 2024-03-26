@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +9,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        garamond: ["eb-garamond", "sans-serif"],
-        nunito: ["nunito", "sans-serif"],
+        lilita: ["lilita-one", "sans-serif"],
+        quicksand: ["quicksand", "sans-serif"],
+      },
+      colors: {
+        primary: "#ea580c",
+        secondary: "#ea930c",
+        tertiary: "#a40a08",
       },
     },
   },

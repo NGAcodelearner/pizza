@@ -37,7 +37,7 @@ const PizzaDetail = ({ pizza }) => {
   }, [additionalTopping]);
 
   return (
-    <div className="relative flex flex-col lg:flex-row lg:gap-x-8 h-full w-full  md:p-8">
+    <div className="relative flex flex-col lg:flex-row lg:gap-x-8 h-full w-full pr-4 md:p-8">
       {/* image */}
       <div className="mx-auto max-h-[160px] lg:max-h-none lg:w-1/3 lg:flex lg:justify-center lg:items-center overflow-hidden object-cover">
         <Image width={400} height={400} src={pizza.image} alt={pizza.name} />

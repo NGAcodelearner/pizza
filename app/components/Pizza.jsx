@@ -77,9 +77,9 @@ const Pizza = ({ pizza }) => {
           contentLabel="Pizza modal"
           className="fixed inset-0 flex items-center justify-center bg-gray-400/50 bg-opacity-90"
         >
-          <div className="bg-white w-[90%] h-[80%] rounded-xl lg:max-w-[800px] lg:max-h-[700px] relative">
+          <div className="relative bg-white w-[90%] h-[80%] rounded-xl lg:max-w-[800px] lg:max-h-[700px]">
             {/* icon close */}
-            <div className="absolute top-2 right-2 hover:scale-110 duration-200">
+            <div className="absolute top-2 z-10 right-2 hover:scale-110 duration-200">
               <IoCloseOutline
                 onClick={closeModal}
                 className="text-4xl text-tertiary cursor-pointer"

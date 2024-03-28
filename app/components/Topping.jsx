@@ -10,15 +10,16 @@ const Topping = ({ topping, additionalTopping, setAdditionalTopping }) => {
   };
 
   const handleTopping = () => {
+    //add the topping to additionalTopping
     if (isChecked) {
-      const newTopping = new Set([...additionalTopping, { ...topping }]);
-      setAdditionalTopping(newTopping);
+      const newToppings = [...additionalTopping, { ...topping }];
+      setAdditionalTopping(newToppings);
     } else {
-      // remove thw topping with matching name
-      const newTopping = Array.from(additionalTopping).filter((toppingObj) => {
+      // remove the topping with matching name
+      const newToppings = additionalTopping.filter((toppingObj) => {
         return toppingObj.name !== topping.name;
       });
-      setAdditionalTopping(newTopping);
+      setAdditionalTopping(newToppings);
     }
   };
 

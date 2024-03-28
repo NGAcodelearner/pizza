@@ -26,10 +26,9 @@ const PizzaDetail = ({ pizza }) => {
 
   useEffect(() => {
     if (additionalTopping.length > 0) {
-      const totalToppingPrice = additionalTopping.reduce(
-        (accumulator, currentPrice) => accumulator + currentPrice,
-        0
-      );
+      const totalToppingPrice = additionalTopping.reduce((a, c) => {
+        return a + c.price;
+      }, 0);
       setToppingPrice(totalToppingPrice);
     } else {
       setToppingPrice(0);
@@ -98,7 +97,7 @@ const PizzaDetail = ({ pizza }) => {
           </div>
         </div>
         <button className="px-4 py-2 capitalize text-lg bg-primary text-white font-semibold hover:bg-orange-700 transition">
-          Add to cart <span>$100</span>
+          Add to cart <span>$ {totalPrice}</span>
         </button>
       </div>
     </div>

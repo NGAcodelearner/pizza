@@ -3,7 +3,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <section>
-      <div className="bg-primary bg-pattern pt-16">
+      <div className=" bg-primary bg-pattern lg:pt-8 pt-24">
         <div className="container mx-auto px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-center min-h-[700px]">
           <div className="flex-1  text-center lg:text-left">
             <h1 className="text-2xl lg:text-3xl tracking-wide text-gray-800 font-semibold ">
@@ -12,7 +12,7 @@ const Banner = () => {
                 PizzaPal
               </span>
             </h1>
-            <h2 className="text-5xl lg:text-6xl text-white mt-4 lilita-one drop-shadow-2xl">
+            <h2 className="text-5xl lg:text-7xl text-white lilita-one drop-shadow-2xl">
               The best pizza to share with friends
             </h2>
           </div>

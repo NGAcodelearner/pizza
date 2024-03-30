@@ -9,13 +9,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lilita: ["lilita-one", "sans-serif"],
         quicksand: ["quicksand", "sans-serif"],
       },
       colors: {
         primary: "#ea580c",
         secondary: "#ea930c",
         tertiary: "#a40a08",
+      },
+      backgroundImage: {
+        pattern: "url('/pattern.png')",
       },
     },
   },

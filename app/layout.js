@@ -1,3 +1,4 @@
+import CartMobileIcon from "./components/CartMobileIcon";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
+        <CartMobileIcon />
         {children}
       </body>
     </html>
